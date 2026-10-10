@@ -1,0 +1,53 @@
+# Generated builds
+**/build/
+**/build-*/
+**/cmake-build-*/
+**/CMakeFiles/
+CMakeCache.txt
+Testing/
+
+# Compiler and linker output
+*.o
+*.obj
+*.exe
+*.out
+*.pdb
+*.ilk
+*.a
+*.lib
+*.so
+*.dll
+*.elf
+*.bin
+*.hex
+*.map
+
+# Generated images
+*.qcow2
+*.img
+*.iso
+
+# Local editor, OS and Python files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.venv/
+
+# Local document backup
+/docs-before-cleanup-*.zip
+
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Private repository and local documents
+/c/
+/resume/
+/phison-pcie-ssd-interview/
+/output/
+/tmp/
+/PROGRESS.md
