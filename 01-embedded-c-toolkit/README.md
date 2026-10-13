@@ -1,5 +1,13 @@
 # Embedded C Toolkit
 
+## 學習從這裡開始
+
+先讀 [逐步教學 LEARNING.md](LEARNING.md)：用途與例子 → 必要概念 → 第一個小實作 → 驗證與排錯。重要概念附 reference、閱讀範圍與學習重點。
+
+先讀教學第 1～3 節，理解 ring buffer 的用途、檔案分工與 `assert`，再做第 4 節的成功／失敗測試練習。
+
+下方保留完整專案規格；初學時先按教學的小步驟前進，再回來對照驗收。
+
 呼叫端提供儲存空間的 byte ring buffer，不在 library 內配置記憶體。目前已有 ring buffer 與單元測試；CRC 和串流 parser 尚待實作。
 
 ## 介面

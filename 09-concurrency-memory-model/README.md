@@ -1,6 +1,14 @@
 # 並行、記憶體模型與有界工作佇列
 
-狀態：規劃中，目前只有規格。
+## 學習從這裡開始
+
+先讀 [逐步教學 LEARNING.md](LEARNING.md)：用途與例子 → 必要概念 → 第一個小實作 → 驗證與排錯。重要概念附 reference、閱讀範圍與學習重點。
+
+先建立一條 thread 並 join，再學 mutex、條件等待與 close；atomic SPSC 放在有鎖版本正確之後。
+
+下方保留完整專案規格；初學時先按教學的小步驟前進，再回來對照驗收。
+
+狀態：規劃中，已有規格與逐步教學，程式尚待實作。
 環境：Linux/WSL2 userspace，pthread、C11 atomics；TSan 與 ASan 分開建置。
 前置：有界佇列、記憶體所有權、partial I/O；先完成 02 的單執行緒版本。
 

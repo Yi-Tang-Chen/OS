@@ -1,6 +1,14 @@
 # 有背壓與故障恢復的 Linux 資料服務
 
-狀態：規劃中，目前只有規格。
+## 學習從這裡開始
+
+先讀 [逐步教學 LEARNING.md](LEARNING.md)：用途與例子 → 必要概念 → 第一個小實作 → 驗證與排錯。重要概念附 reference、閱讀範圍與學習重點。
+
+先認識 fd、read/write 和 socketpair，再寫一個傳送 3 個 bytes 的小程式；之後才整合 parser 與非阻塞 I/O。
+
+下方保留完整專案規格；初學時先按教學的小步驟前進，再回來對照驗收。
+
+狀態：規劃中，已有規格與逐步教學，程式尚待實作。
 環境：WSL2/Linux；用 PTY、socketpair 或 Unix domain socket，暫不需要板子。
 前置：01 的 parser library，以及檔案 I/O、callback 和 partial write。
 

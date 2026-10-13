@@ -1,5 +1,13 @@
 # PCI／DMA Driver Lab
 
+## 學習從這裡開始
+
+先讀 [逐步教學 LEARNING.md](LEARNING.md)：用途與例子 → 必要概念 → 第一個小實作 → 驗證與排錯。重要概念附 reference、閱讀範圍與學習重點。
+
+先讓 guest 的 lspci 看見 EDU，再依序完成 probe/remove、MMIO、IRQ、DMA，每個階段分開驗證。
+
+下方保留完整專案規格；初學時先按教學的小步驟前進，再回來對照驗收。
+
 狀態：待實作。目標是理解硬體資料如何進入記憶體，作為 PCIe／網卡／儲存／加速器 driver 的共通基礎。
 前置：[05 的 FIFO／生命週期](../05-linux-kernel-driver/README.md)、[09 的 mutex／同步](../09-concurrency-memory-model/README.md)。環境：Linux／WSL2 上的獨立 QEMU guest；固定 kernel、QEMU、machine 與 toolchain。guest 必須支援 PCI 與 EDU；可用 x86_64 q35，與 04 的 ARM boot 實驗分開保存設定。
 

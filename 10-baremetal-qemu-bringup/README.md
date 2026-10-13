@@ -1,6 +1,14 @@
 # 從 reset 到 main 的 bare-metal bring-up
 
-狀態：規劃中，目前只有規格。
+## 學習從這裡開始
+
+先讀 [逐步教學 LEARNING.md](LEARNING.md)：用途與例子 → 必要概念 → 第一個小實作 → 驗證與排錯。重要概念附 reference、閱讀範圍與學習重點。
+
+先選 machine 並查 memory map，再用自己的 startup/linker 讓 GDB 停在 reset 和 main，之後才加 UART 與 IRQ。
+
+下方保留完整專案規格；初學時先按教學的小步驟前進，再回來對照驗收。
+
+狀態：規劃中，已有規格與逐步教學，程式尚待實作。
 環境：固定一個QEMU支援的Cortex-M machine和arm-none-eabi toolchain；後續需真板補驗證。
 前置：位元操作、整數範圍、計時器；理解 pointer、stack 與儲存期。
 

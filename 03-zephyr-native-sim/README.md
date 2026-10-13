@@ -1,6 +1,14 @@
 # 具資源上限的 RTOS telemetry pipeline
 
-狀態：規劃中，目前只有規格。
+## 學習從這裡開始
+
+先讀 [逐步教學 LEARNING.md](LEARNING.md)：用途與例子 → 必要概念 → 第一個小實作 → 驗證與排錯。重要概念附 reference、閱讀範圍與學習重點。
+
+先在固定版本的 native_sim 跑出 Hello World，再建立自己的 app、兩條 thread 與一個 queue。
+
+下方保留完整專案規格；初學時先按教學的小步驟前進，再回來對照驗收。
+
+狀態：規劃中，已有規格與逐步教學，程式尚待實作。
 環境：Linux/WSL2 + 鎖定版本的 Zephyr native_sim；模擬結果不代表真板 timing。
 前置：01 的純 C library、函式指標、環形佇列與 unsigned 計時；同步概念見 09。
 

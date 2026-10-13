@@ -1,6 +1,14 @@
 # 生命週期與並行安全的 character driver
 
-狀態：規劃中，目前只有規格。
+## 學習從這裡開始
+
+先讀 [逐步教學 LEARNING.md](LEARNING.md)：用途與例子 → 必要概念 → 第一個小實作 → 驗證與排錯。重要概念附 reference、閱讀範圍與學習重點。
+
+先在獨立 guest 載入／卸載最小 module，再做裝置 open/close 與 FIFO；等待和鎖的前置概念見 09 教學。
+
+下方保留完整專案規格；初學時先按教學的小步驟前進，再回來對照驗收。
+
+狀態：規劃中，已有規格與逐步教學，程式尚待實作。
 環境：獨立 QEMU guest 中的可重建 Linux kernel；不直接在工作主機載入練習模組。
 前置：02 的 userspace I/O；09 的 locking 與 ownership。
 
