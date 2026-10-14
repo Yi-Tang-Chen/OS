@@ -107,6 +107,27 @@ static void test_peek_does_not_remove(void)
     assert(ring_buffer_is_empty(&rb));
 }
 
+static void test_capacity_one(void){
+    ring_buffer_t rd;
+    uint8_t storage[1];
+    uint8_t value = 0;
+
+    assert(ring_buffer_init(&rd, storage, sizeof(storage)));
+    assert(ring_buffer_push(&rd, 42));
+    assert(ring_buffer_is_full(&rd));
+    assert(ring_buffer_size(&rd) == 1);
+
+    assert(!ring_buffer_push(&rd, 99));
+    assert(ring_buffer_size(&rd) == 1);
+
+    assert(ring_buffer_peek(&rd, &value));
+    assert(ring_buffer_is_full(&rd));
+
+    assert(ring_buffer_pop(&rd, &value));
+    assert(ring_buffer_is_empty(&rd));
+
+}
+
 int main(void)
 {
     test_init_rejects_bad_input();
