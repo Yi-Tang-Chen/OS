@@ -136,6 +136,7 @@ int main(void)
     test_full_buffer_rejects_push();
     test_wraparound();
     test_peek_does_not_remove();
+    test_capacity_one();
 
     puts("ring_buffer tests passed");
     return 0;
